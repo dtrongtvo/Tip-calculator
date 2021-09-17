@@ -1,0 +1,138 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 
+Medium: 
+Paragraph default: 
+
+- Letter spacing
+
+--- 02 COLORS
+
+- Primary: hsl(172, 67%, 45%)
+- Tints:
+hsl(0, 0%, 100%)
+hsl(189, 41%, 97%)
+hsl(185, 41%, 84%)
+
+- Shades: 
+hsl(184, 14%, 56%)
+#5e7a7d
+hsl(183, 100%, 15%)
+
+- Accents:
+- Greys
+
+
+--- 05 SHADOWS
+
+
+
+--- 06 BORDER-RADIUS
+4px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+.app {
+  width: 85rem;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 3.2rem;
+  gap: 3.2rem;
+}
+
+.app-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.app-input-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.app-input-options {
+  gap: 1.2rem;
+}
+
+.app-btn {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #00494d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.app-btn:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+.app-btn--reset {
+  margin-top: auto;
+  background-color: hsl(184, 14%, 56%);
+  color: #00494d;
+  letter-spacing: 2px;
+}
+
+.input-custom {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+/* RESULT */
+
+.app-results {
+  background-color: #00494d;
+  border-radius: 12px;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.result-category {
+  color: hsl(189, 41%, 97%);
+  font-size: 1.6rem;
+}
+
+.result-unit,
+.result-number {
+  color: hsl(184, 14%, 56%);
+}
+
+.result-unit {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.result-number {
+  font-size: 3.2rem;
+  font-weight: 700;
+}

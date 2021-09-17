@@ -1,44 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GG FONT -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./src/css/general.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <section class="app-logo">
+      <img src="./images/logo.svg" alt="Splitter logo" />
+    </section>
+    <!-- APP BODY -->
+    <section class="app d-grid grid--2-cols">
+      <div class="app-input-form">
+        <div>
+          <label for="total-bill" id="bill" class="app-input-label">Bill</label>
+          <input
+            type="number"
+            name="total-bill"
+            class="input-form input--bill"
+            placeholder="0.00"
+          />
+        </div>
 
-  Bill
+        <div>
+          <p class="app-input-label">Select Tip %</p>
+          <div class="app-input-options d-grid grid--3-cols">
+            <button class="app-btn" value="5">5%</button>
+            <button class="app-btn" value="10">10%</button>
+            <button class="app-btn" value="15">15%</button>
+            <button class="app-btn" value="25">25%</button>
+            <button class="app-btn" value="50">50%</button>
+            <input
+              class="input-form input-custom"
+              type="number"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        <div>
+          <div class="label-error">
+            <label for="people" class="app-input-label">Number of people</label>
+          </div>
+          <input
+            type="number"
+            name="people"
+            id="people"
+            class="input-form input--people"
+            placeholder="1"
+            min="0"
+          />
+        </div>
+      </div>
 
-  Number of People
+      <div class="app-results">
+        <div class="result-row">
+          <div class="result-title">
+            <p class="result-category result-category--tip">Tip Amount</p>
+            <p class="result-unit">/ person</p>
+          </div>
+          <p class="result-number">$4.27</p>
+        </div>
 
-  Tip Amount
-  / person
+        <div class="result-row">
+          <div class="result-title">
+            <p class="result-category result-category--total">Total</p>
+            <p class="result-unit">/ person</p>
+          </div>
+          <p class="result-number">$32.79</p>
+        </div>
 
-  Total
-  / person
+        <button class="app-btn app-btn--reset">RESET</button>
+      </div>
+    </section>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">dtrongtvo</a>.
+    </div>
+  </body>
 </html>
