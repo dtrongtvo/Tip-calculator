@@ -58,8 +58,9 @@
     <section class="app d-grid grid--2-cols">
       <div class="app-input-form">
         <div>
-          <label for="total-bill" id="bill" class="app-input-label">Bill</label>
+          <label for="total-bill" class="app-input-label">Bill</label>
           <input
+            id="bill"
             type="number"
             name="total-bill"
             class="input-form input--bill"
@@ -77,6 +78,7 @@
             <button class="app-btn" value="50">50%</button>
             <input
               class="input-form input-custom"
+              id="custom-ratio"
               type="number"
               placeholder="Custom"
             />
@@ -104,7 +106,7 @@
             <p class="result-category result-category--tip">Tip Amount</p>
             <p class="result-unit">/ person</p>
           </div>
-          <p class="result-number">$4.27</p>
+          <p class="result-number result-number--tip">$0.00</p>
         </div>
 
         <div class="result-row">
@@ -112,7 +114,7 @@
             <p class="result-category result-category--total">Total</p>
             <p class="result-unit">/ person</p>
           </div>
-          <p class="result-number">$32.79</p>
+          <p class="result-number result-number--total">$0.00</p>
         </div>
 
         <button class="app-btn app-btn--reset">RESET</button>
@@ -127,5 +129,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">dtrongtvo</a>.
     </div>
+    <script src="./src/js/controller.js"></script>
   </body>
 </html>
