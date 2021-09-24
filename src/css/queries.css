@@ -1,0 +1,37 @@
+@media (max-width: 992px) {
+  body {
+    height: unset;
+    gap: 6.4rem;
+  }
+  .app-logo {
+    padding-top: 6.4rem;
+  }
+  .app {
+    width: 40rem;
+  }
+  .input-form {
+    padding: 0.6rem 1.8rem;
+  }
+  .attribution {
+    padding-bottom: 6.4rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 9px;
+  }
+  body {
+    padding: 0 2.4rem;
+  }
+  .app {
+    width: 100%;
+  }
+
+  .input-custom::placeholder {
+    font-size: 1.2rem;
+  }
+}
