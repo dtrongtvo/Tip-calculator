@@ -93,6 +93,11 @@ hsl(183, 100%, 15%)
   letter-spacing: 2px;
 }
 
+.app-btn.active {
+  background-color: hsl(184, 14%, 56%);
+  color: #00494d;
+}
+
 .input-custom {
   text-align: center;
   font-size: 1.8rem;

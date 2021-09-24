@@ -6,6 +6,7 @@ const peopleForm = document.querySelector("#people");
 const tipResult = document.querySelector(".result-number--tip");
 const totalResult = document.querySelector(".result-number--total");
 const btnsOption = document.querySelectorAll(".app-input-options button");
+console.log(btnsOption);
 const btnReset = document.querySelector(".app-btn--reset");
 
 let totalBill = 0;
@@ -51,11 +52,21 @@ const reset = function () {
   calculateAndRender();
 };
 
+const removeActive = function () {
+  Array.from(btnsOption).find((btn) => {
+    if (btn.classList.contains("active")) {
+      btn.classList.remove("active");
+    }
+  });
+};
+
 // When click ratio btn
 btnsOption.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     tipRatio = e.target.value;
     calculateAndRender();
+    removeActive();
+    e.target.classList.add("active");
   });
 });
 
@@ -79,6 +90,7 @@ customForm.addEventListener("focus", function () {
     tipRatio = customForm.value;
     calculateAndRender();
   }
+  removeActive();
 });
 
 btnReset.addEventListener("click", reset);
