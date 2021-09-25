@@ -22,7 +22,7 @@ const calculateTip = function (totalBill, tipRatio, numPeople) {
 const calculatePersonTotal = function (totalBill, tipRatio, numPeople) {
   return (
     totalBill / numPeople +
-    parseInt(calculateTip(totalBill, tipRatio, numPeople))
+    parseFloat(calculateTip(totalBill, tipRatio, numPeople))
   ).toFixed(2);
 };
 
